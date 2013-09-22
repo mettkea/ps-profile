@@ -68,7 +68,7 @@ function prompt {
 # Functions
 
 function update-profile {
-    $script_dir = join-path $env:home "mettkea-scripts\powershell-profile"
+    $script_dir = join-path $env:home "ps-profile"
     $home_dir = join-path $env:userprofile "Documents\WindowsPowerShell"
     xcopy /S /Y $script_dir $home_dir
 }
